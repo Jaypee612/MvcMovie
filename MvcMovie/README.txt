@@ -117,3 +117,75 @@ and added the below data
 
 0908: Tested the App with this /Movies/Edit/4 working fine
 
+20250204
+
+Build started at 05:51 PM...
+1>------ Build started: Project: MvcMovie, Configuration: Debug Any CPU ------
+1>MvcMovie -> C:\Users\DELL\source\repos\MvcMovie\MvcMovie\bin\Debug\net8.0\MvcMovie.dll
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+========== Build completed at 05:51 PM and took 04.957 seconds ==========
+
+1755: Build Completed Successfully
+
+1800: Modified the MoviesController class file with the NotFound values for the unknown values which is more than 4 Movies/Edit/5
+
+1820: [HttpPost] Included the Http post in the MoviesController class file to edit the existing data in the Database
+
+1825: <form asp-action="Edit"> Included the content in the Views/Movies/Edit.cshtml file
+
+1830: Tested the changes with 4 & 5 both are working fine for 4 the perfect result but 5 page not found exception https://localhost:7051/Movies/Edit/4
+
+1835: While testing for the Create New and Editing the existing Data the Error was thrown for the improper Release Date and Price
+
+1845: Included the Search String in the Controllers/MoviesController.cs to find the Movie name or else with the Genre
+
+1850: Tested with the ?searchString it is working fine and with the name as well
+
+1855: Included the <form> makeup in the Views/Movies/Index.cshtml for the Search Box
+
+1900: Tested the application it is working fine as expected with the proper Edit, Detail, and Delete options 
+
+1905: With the above changes the Title Free Text Search Box has been created 
+
+1910: Tested the Current aookucation with the Console it is working fine with the Network data Request URL, Method, and Status Code
+
+1915: Included the form controller in the Index.cshtml file to be reflected in the Application
+
+1920: For the Genre Search I have created the new field with MovieGenreViewModel under the Models Folder
+
+1925: Replaced the Index Method in the MoviesController 
+
+1930: LINQ query has been added to retrieve the Genre Data from the Database
+
+1940: Added the search box for the genre in the Index File, the file has been updated and its working fine as expected
+
+1944: Part 8
+
+Clean started at 7:44 PM...
+1>------ Clean started: Project: MvcMovie, Configuration: Debug Any CPU ------
+========== Clean: 1 succeeded, 0 failed, 0 skipped ==========
+========== Clean completed at 7:44 PM and took 04.351 seconds ==========
+
+Rebuild started at 7:47 PM...
+Restored C:\Users\DELL\source\repos\MvcMovie\MvcMovie\MvcMovie.csproj (in 1.23 sec).
+1>------ Rebuild All started: Project: MvcMovie, Configuration: Debug Any CPU ------
+1>MvcMovie -> C:\Users\DELL\source\repos\MvcMovie\MvcMovie\bin\Debug\net8.0\MvcMovie.dll
+========== Rebuild All: 1 succeeded, 0 failed, 0 skipped ==========
+========== Rebuild completed at 7:48 PM and took 15.040 seconds ==========
+
+2000: GitHub account has been created
+
+2010: Rating property has been added in the Models/Movies.cs file to fetch the data added with get and set 
+
+2015: Once the changes has been done the same should be included in the MoviesController Class file to reflect in the application to add the same in Create and Edit methods respectively 
+
+2020: Same should be added in the Views Index as well, then in the Create class file for the form-group the Rating should be included
+
+2025: The SeedData file has to be updated for the Rating with some data, have tried testing but there was an error
+
+SqlException: Invalid column name 'Rating'
+
+The above error is because the Database is not updated for that we need to Migrate and Update the changes in the Project Manager Console PMC with the below powershell code 
+
+Add-Migration Rating
+Update-Database
