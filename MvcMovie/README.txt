@@ -189,3 +189,27 @@ The above error is because the Database is not updated for that we need to Migra
 
 Add-Migration Rating
 Update-Database
+
+20250205
+
+1000: Started with the Clean Solution
+
+Clean started at 10:05 AM...
+1>------ Clean started: Project: MvcMovie, Configuration: Debug Any CPU ------
+========== Clean: 1 succeeded, 0 failed, 0 skipped ==========
+========== Clean completed at 10:05 AM and took 03.230 seconds ==========
+
+1005: Rebuilded the Code and tested the application is successfully running
+
+Rebuild started at 10:07 AM...
+1>------ Rebuild All started: Project: MvcMovie, Configuration: Debug Any CPU ------
+Restored C:\Users\DELL\source\repos\MvcMovie\MvcMovie\MvcMovie.csproj (in 1.69 sec).
+1>MvcMovie -> C:\Users\DELL\source\repos\MvcMovie\MvcMovie\bin\Debug\net8.0\MvcMovie.dll
+========== Rebuild All: 1 succeeded, 0 failed, 0 skipped ==========
+========== Rebuild completed at 10:07 AM and took 22.730 seconds ==========
+
+1010: Modified the Movie Class file with the Validation Rules for the Models along with the Minimum Length, String Length, etc..,
+
+1015: Post the modification able to test it and the output shown was expected with the error if the Validation is not methods
+
+1045: Successfully created the Webpage in the Visual Studio and Created a Repository in GitHub and Cloned as well 
